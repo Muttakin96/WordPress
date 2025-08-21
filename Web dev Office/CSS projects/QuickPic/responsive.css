@@ -1,0 +1,297 @@
+@media screen and (max-width: 450px) {
+    .head-area {
+    display: grid;
+    gap: 20px;
+    justify-content: left;
+    margin: 5%;
+  }
+  nav a {
+    display: grid;
+    padding: 5px 10px;
+  }
+  nav a:hover {
+    width: 106px;
+}
+  .below-area {
+    width: 100%;
+    height: 60px;
+  }
+  .category-button {
+    padding: 5px 18px;
+  }
+
+  /* === Main area === */
+
+  /* --- first area --- */
+
+  .first-area {
+    width: auto; 
+    margin: 5%;
+    gap: 10px;
+    justify-content: left;
+  }
+  .off {
+    margin: 20px 0 0 0;
+    padding: 8px 15px 8px 8px;
+    font-size: 12px;
+  }
+  .shop-message {
+    font-size: 30px;
+  }
+  .save-time {
+    margin: 0px 0px 40px 0px;
+  }
+  .first-left {
+    width: 180px;
+  }
+  .girl-area {
+    background-size: 100%;
+    width: 215px;
+    height: 220px;
+    position: relative;
+}
+.girl-area img {
+    width: 240px;
+    position: absolute;
+    left: -10px;
+    bottom: 0px;
+}
+.shadow-profile {
+    gap: 5px;
+    border-radius: 7px;
+    width: 180px;
+    height: 40px;
+    box-shadow: 0px 4px 30px #0000001A;
+    line-height: 8px;
+    margin: -20px 0 0 10px;
+}
+.shadow-profile img {
+    width: 32px;
+    margin: -12px 0 0 6px;
+}
+.shadow-profile p {
+    font-size: 8px;
+}
+.shadow-profile p span {
+    display: block;
+    margin-bottom: -5px;
+}
+
+  /* --- Second area --- */
+
+  .trending-items {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 10% 0 10%;
+   }
+
+   .trending-items a img {
+    width: 65px;
+    height: 65px;
+   }
+
+   /* --- third area --- */
+
+.deal {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.deal div {
+    background: #3CDA5F;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+.deal div span {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/* dividing the two boxes */
+
+.deal-items {
+    display: grid;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.two-sides {
+    width: 410px;
+    height: 305px;
+    gap: 15px;
+}
+.perfumes {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 218px;
+    height: 302.88px;
+}
+.shampoo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 218px;
+    height: 302.88px;
+}
+img[src="images/List → Item.png"] {
+    margin-right: 10px;
+}
+.buy-now {
+    width: 155px;
+    height: 40px;
+    padding: 10px 30px;
+    gap: 15px;
+}
+.two-sides div p {
+    font-weight: 500;
+    font-size: 20px;
+}
+.two-sides div .small {
+    font-size: 13px;
+}
+
+/* --- Fourth area --- */
+
+.fourth-sides {
+    display: grid;
+    justify-content: space-evenly;
+    gap: 24px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.fourth-left {
+    width: 410px;
+    height: 270px;
+    padding: 48px 0 52px 30px;
+}
+.fourth-right {
+    width: 410px;
+    height: 272px;
+    padding: 48px 0 52px 30px;
+}
+
+/* --- Fifth area --- */
+
+.fifth-sides {
+    display: grid;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+}
+.fifth-left {
+    background: url(images/Polygon\ 1.png);
+    background-size: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 350px;
+    width: 350px;
+}
+.fifth-right {
+    height: 210px;
+    width: auto;
+}
+.fifth-right p {
+    font-size: 40px;
+    padding: 10px 0 20px 10px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+.fifth-area h2 {
+    font-size: 22px;
+}
+
+/* --- sixth area --- */
+
+.sixth-area {
+    width: 100%;
+    height: auto;
+    padding: 7% 5% 10% 7%;
+    margin: 54px 0 0 0;
+}
+
+/* top area of sixth */
+
+.sixth-top {
+    position: relative;
+    height: 260px;
+    font-size: 40px;
+    font-weight: 400;
+}
+.sixth-top p {
+    margin: 0;
+}
+.left-arrow {
+    position: absolute;
+    left: 0px;
+    bottom: 20px;
+}
+.right-arrow {
+    position: absolute;
+    left: 103px;
+    bottom: 20px;
+}
+
+/* botttom area of sixth */
+
+.sixth-bottom {
+    width: auto;
+    height: auto;
+    display: grid;
+    gap: 22.63px;
+    justify-content: space-evenly;
+}
+
+/* --- seventh area --- */
+
+.seventh-area img {
+    width: 200px;
+    margin: 0 0 0 5%;
+    position: absolute;
+    bottom: 23px;
+}
+.seventh-area p {
+    font-size: 22px;
+    position: absolute;
+    top: 110px;
+    left: 250px;
+}
+.seventh-area button {
+    font-size: 15px;
+    padding: 10px 40px;
+    position: absolute;
+    top: 260px;
+    left: 250px;
+}
+
+/* === Footer area === */
+
+.top-side {
+    display: grid;
+    gap: 22px;
+    text-align: left;
+    padding: 5%;
+}
+.one {
+    margin-right: 0px;
+   }
+   .one p {
+    margin: 13px 0;
+   }
+   .two {
+    margin-right: 0px;
+   }
+   .four {
+    margin: 0 0 0 0;
+   }
+
+}

@@ -1,0 +1,547 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #184363;
+}
+
+/* === Header Area === */
+
+.head-area {
+    /* background: green; */
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 180;
+    margin: 35px 67px 25px 67px;
+}
+.logo {
+    font-weight: 500;
+    font-size: 28px;
+    color: black;
+}
+.logo span {
+    color: #3CDA5F;
+}
+nav {
+    margin-top: 5px;
+}
+nav a {
+    /* background: yellow; */
+    text-decoration: none;
+    padding: 0 16px;
+    color: #0A2640;
+}
+nav a:hover {
+    background: #3CDA5F;
+    border-radius: 20px;
+    padding: 5px 15px;
+    color: white;
+}
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.shopnow {
+    background: #3CDA5F;
+    border-radius: 10px;
+    padding: 10px 34px;
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+}
+
+/* Below header area */
+
+.below-area {
+    background: #D6EAF9;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+.category-button {
+    background: white;
+    border: none;
+    padding: 11.5px 18px;
+    border-radius: 25px;
+    display: flex;
+    gap: 6px;
+}
+.category-button:hover {
+    background: #3CDA5F;
+}
+input[placeholder="What are you looking for?"] {
+    padding: 11.5px 18px;
+    border-radius: 20px 0px 0px 20px;
+    border: none;
+    width: 70%;
+}
+.search-logo {
+    background: #3CDA5F;
+    border: none;
+    padding: 11.5px 18px;
+    border-radius: 0px 20px 20px 0px;
+    margin-left: -2px;
+}
+.search-logo i {
+    color: white;
+}
+
+/* === Main Area === */
+
+/* --- first area --- */
+
+.first-area {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 135px;
+    margin: 0 65px;
+}
+.off {
+    margin: 64px 0 0 0;
+    background: #3CDA5F0D;
+    padding: 8px 245px 8px 20px;
+    border-radius: 30px;
+}
+.shop-message {
+    /* background: green; */
+    color: #0A2640;
+    font-size: 72px;
+    font-weight: 500;
+    margin: 7px 0px 0px 0px;
+}
+.shop-message span {
+    color: #ee2d2d;
+}
+.save-time {
+    /* background: green; */
+    margin: 0px 0px 56px 0px;
+    color: black;
+}
+.girl-area {
+    background: url(images/Ellipse\ 7.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 655px;
+    height: 491px;
+    position: relative;
+}
+.shadow-profile {
+    display: flex;
+    gap: 21px;
+    border-radius: 15px;
+    width: 439px;
+    height: 95px;
+    box-shadow: 0px 4px 30px #0000001A;
+    line-height: 24px;
+    margin: -60px 0 0 60px;
+    background: #F8F8F8;
+    position: absolute;
+    z-index: 2;
+}
+.shadow-profile img {
+    margin: 15px 0 0 19px;
+}
+.shadow-profile p span {
+    color: black;
+    /* display: block;
+    margin-bottom: -20px; */
+}
+.shadow-profile p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #777676;
+}
+
+/* --- Second area --- */
+
+.trending {
+    margin-top: 84.3px;
+    margin-bottom: 59px;
+    display: grid;
+    justify-content: center;
+}
+img[alt="ell"] {
+    margin-left: 135px;
+    margin-top: -10px;
+}
+.trending-items {
+    display: flex;
+    gap: 40px;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 0 10% 0 10%;
+}
+.trending-items a {
+    text-decoration: none;
+    color: black;
+}
+
+/* --- third area --- */
+
+.deal {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 85px;
+    margin-bottom: 30px;
+}
+.deal div {
+    background: #3CDA5F;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+.deal div span {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/* dividing the two boxes */
+
+.deal-items {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 100px;
+    margin-right: 100px;
+    gap: 24px;
+}
+.two-sides {
+    display: flex;
+    align-items: center;
+    border: 1px solid #EAEAEA;
+    border-radius: 10px;
+    width: 608px;
+    height: 305px;
+    gap: 24px;
+}
+.perfumes {
+    background: url(images/div.post-image.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 302.88px;
+    height: 302.88px;
+    border-radius: 10px 0 0 10px;
+}
+.shampoo {
+    background: url(images/Link\ →\ product74-600x600.jpg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 302.88px;
+    height: 302.88px;
+    border-radius: 10px 0 0 10px;
+}
+img[src="images/List → Item.png"] {
+    margin-right: 12px;
+}
+.buy-now {
+    width: 180px;
+    height: 40px;
+    padding: 10px 34px;
+    display: flex;
+    gap: 25px;
+    background: #EDF4F6;
+    border: none;
+    border-radius: 100px;
+}
+.two-sides div p {
+    font-weight: 500;
+    font-size: 20px;
+}
+.two-sides div .small {
+    font-size: 13px;
+}
+
+/* --- Fourth area --- */
+
+.fourth-area h2 {
+    text-align: center;
+    /* background: green; */
+    font-weight: 600;
+    font-size: 25px;
+    margin: 42px 0 42px 0;
+}
+.fourth-sides {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 24px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.fourth-left {
+    background: url(images/div.banner-back\ mask.svg);
+    background-repeat: no-repeat;
+    width: 608px;
+    height: 270px;
+    background-position: center;
+    border-radius: 10px;
+    padding: 48px 0 52px 56px;
+}
+.fourth-right {
+    background: url(images/div.banner-back.png);
+    background-repeat: no-repeat;
+    width: 608px;
+    height: 272px;
+    background-position: center;
+    border-radius: 10px;
+    padding: 48px 0 52px 56px;
+}
+.fourth-sides .price {
+    background: #F2971F;
+    display: inline-block;
+    padding: 4px 9px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+    margin: 0;
+}
+.fourth-names {
+    font-weight: 500;
+    font-size: 28px;
+    margin-top: 20px;
+}
+.now {
+    background: #184363;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 50px;
+}
+
+/* --- Fifth area --- */
+
+.fifth-sides {
+    display: flex;
+    margin-left: 74px;
+    margin-right: 74px;
+    margin-top: 70px;
+}
+.fifth-left {
+    background: url(images/Polygon\ 1.png);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-color: green; */
+    height: 500px;
+    width: 500px;
+}
+.fifth-right {
+    /* background-color: green; */
+    height: 500px;
+    width: 650px;
+}
+.fifth-right p {
+    font-weight: 500;
+    font-size: 72px;
+    padding: 50px 0 20px 100px;
+    color: #2A3136;
+}
+.fifth-right p span {
+    color: #FD273B;
+}
+.fifth-area h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 2px;
+}
+
+/* --- sixth area --- */
+
+.sixth-area {
+    background: #B4FEC4;
+    width: 100%;
+    height: 782px;
+    padding: 96px 160px 81px 154px;
+    margin: 54px 0 0 0;
+}
+
+/* top area of sixth */
+
+.sixth-top {
+    position: relative;
+    height: 211px;
+    font-size: 48px;
+    font-weight: 400;
+}
+.sixth-top button {
+    background: white;
+    border: none;
+    border-radius: 100px;
+    height: 72px;
+    width: 74px;
+}
+.left-arrow {
+    position: absolute;
+    right: 46px;
+    bottom: 56px;
+}
+.right-arrow {
+    position: absolute;
+    right: -57px;
+    bottom: 56px;
+}
+
+/* botttom area of sixth */
+
+.sixth-bottom {
+    width: auto;
+    height: 394px;
+    display: flex;
+    gap: 22.63px;
+    justify-content: space-evenly;
+}
+.sixth-bottom > div {
+    width: 360px;
+    height: 394px;
+    background: white;
+    border-radius: 12px;
+}
+.sixth-bottom .smart-resize {
+    height: 358px;
+}
+.sixth-bottom div div {
+    margin: 0 40px 0 40px;
+    padding: 0;
+}
+.sixth-bottom > div > p {
+    font-size: 24px;
+    font-weight: 400;
+    padding: 40px;
+    margin: 0;
+    color: black;
+}
+.sixth-bottom img {
+    float: left;
+    margin-right: 16px;
+}
+.customer {
+    padding: 5px;
+    line-height: 25px;
+    font-size: 14px;
+}
+.customer span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* --- seventh area --- */
+
+.seventh-area {
+    background: url(images/Rectangle\ 1905.png);
+    /* background: linear-gradient(to right, #B1F9C6, white, #B1F9C6); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 409px;
+    position: relative;
+    margin-top: 27px;
+}
+.seventh-area img {
+    margin: 0 142px 0 128px;
+    position: absolute;
+    bottom: 14px;
+}
+.seventh-area p {
+    color: #0A2640;
+    font-weight: 600;
+    font-size: 42px;
+    margin-bottom: 41px;
+    position: absolute;
+    top: 110px;
+    left: 603px;
+}
+.seventh-area button {
+    font-size: 20px;
+    padding: 18px 92px;
+    background: #3CDA5F;
+    border-radius: 8px;
+    border: none;
+    position: absolute;
+    top: 299px;
+    left: 603px;
+}
+
+/* === Footer area === */
+
+footer {
+    background: #0A2640;
+    color: white;
+    margin-top: 25px;
+}
+.top-side {
+    display: flex;
+    justify-content: space-between;
+    gap: 87px;
+    text-align: center;
+    padding: 89px 72px 93px 148px;
+}
+.one {
+    margin-right: 93px;
+    text-align: left;
+}
+.one h1 {
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 51px;
+}
+.one span {
+    color: #3CDA5F;
+}
+.one p {
+    margin: 13px 0;
+    font-weight: 500;
+    font-size: 24px;
+}
+.icon-links {
+    display: flex;
+    gap: 20px;
+}
+.two {
+    margin-right: 55px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.two a,
+.two p {
+    display: block;
+    margin: 10px 0;
+    color: white;
+    text-decoration: none;
+}
+.three {
+    font-size: 24px;
+    font-weight: 500;
+}
+.three p {
+    margin: 10px 0;
+}
+.bottom-side p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    padding-bottom: 32px;
+    margin: 0;
+}
+.four {
+    background: url(images/online-shopping-VVLSnCLiUQ.png);
+    background-repeat: no-repeat;
+    width: 308px;
+    height: 234px;
+    margin: 35px 0 0 0;
+}
