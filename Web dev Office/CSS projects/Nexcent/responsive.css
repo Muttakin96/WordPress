@@ -1,0 +1,181 @@
+@media screen and (max-width: 430px) {
+    /* === header area === */
+
+    /* --- head section --- */
+
+    .head-section {
+        display: grid;
+        gap: 25px;
+        padding: 22px 5% 22px 5%;
+    }
+
+    nav {
+        display: grid;
+        gap: 15px;
+    }
+    nav a:hover {
+        transform: scale(1.05);
+    }
+
+    /* --- hero section --- */
+
+    .hero-section {
+        padding: 25px 0;
+    }
+    .hero-sides {
+        display: grid;
+        gap: 25px;
+        margin: 0 5%;
+    }
+    .hero-sides div:first-child {
+        width: auto;
+    }
+
+    .hero-sides div:last-child img {
+        width: 300px;
+    }
+
+    /* --- client section --- */
+
+    .client-section div div {
+        gap: 55px;
+    }
+
+    /* --- Community Section --- */
+
+    .community-section {
+        padding: 25px 0;
+    }
+
+    .community-section>div {
+        display: grid;
+        gap: 15px;
+    }
+
+    /* === Main area === */
+
+    /* --- a-section --- */
+
+    .a-section {
+        display: grid;
+        margin: 0 5%;
+        gap: 15px;
+    }
+    .a-section div:first-child img {
+        width: 300px;
+    }
+
+    .a-section div:last-child {
+        width: auto;
+    }
+
+    /* --- b-section --- */
+
+    .b-section {
+        display: grid;
+        gap: 25px;
+        padding: 25px 0;
+        margin-top: 25px;
+    }
+    .b-left {
+        margin: 0 5%;
+    }
+    .b-right {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 25px;
+        margin: 0 5%;
+    }
+
+    /* --- c-section --- */
+
+    .c-section {
+        display: grid;
+        gap: 20px;
+        margin: 48px 5% 0 5%;
+    }
+    .c-section div:first-child img {
+        width: 300px;
+    }
+
+    .c-section div:last-child {
+        width: auto;
+    }
+
+    /* --- d-section --- */
+
+    .d-section {
+        display: grid;
+        gap: 15px;
+    }
+    .d-left {
+        margin: 0 5%;
+    }
+    .d-left img {
+        width: 300px;
+    }
+    .d-right {
+        width: auto;
+        margin: 0 5%;
+    }
+    .d-section div div {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+    }
+
+    /* --- e-section --- */
+
+    .e-section {
+        margin: 25px 5% 0 5%;
+    }
+    .e-section h1,
+    .e-section p {
+        width: auto;
+    }
+
+    .cards {
+        display: grid;
+        gap: 40px;
+    }
+
+    .left-card {
+        width: 331.2px;
+        height: 366px;
+    }
+    .left-card>div {
+        width: 285.3px;
+        height: 200px;
+    }
+
+    .middle-card {
+        width: 331.2px;
+        height: 366px;
+    }
+    .middle-card>div {
+        width: 285.3px;
+        height: 200px;
+    }
+
+    .right-card {
+        width: 331.2px;
+        height: 366px;
+    }
+    .right-card>div {
+        width: 285.3px;
+        height: 200px;
+    }
+
+    /* --- f-section --- */
+
+    .f-section h1 {
+        margin: 0 5% 25px 5%;
+        font-size: 32px;
+    }
+
+    /* === footer === */
+
+    footer {
+        display: grid;
+        padding: 64px 5%;
+    }
