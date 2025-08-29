@@ -1,0 +1,555 @@
+/* === Universal ~ Global CSS === */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+h1, h2 {
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+button {
+    cursor: pointer;
+}
+
+:root {
+    --primary-color: #C1DEE8;
+    --secondary-color: #FBD9B9;
+    --black: #000000;
+    --heading-ink: #1F1F1F;
+    --cards-gray: #BEBEBE;
+    --white: #FEFEFF;
+    --nav-whitey-gray: #FAFAFA;
+    --hover-color: #005b96;
+    --hover-background: #3b444b;
+    --font-size-regular: 16px;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+}
+
+/* === header styles === */
+
+/* --- nav section --- */
+
+.nav-section {
+    background: var(--nav-whitey-gray);
+    padding: 13px 24px 17px 40px;
+    margin: 34px 30px 32px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 70px;
+    animation: nav-section 1.5s cubic-bezier(.28,.84,.42,1);
+}
+
+@keyframes nav-section {
+    0% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    35% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.nav-section nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 18px 33px 18px 22px;
+    border-radius: 40px;
+    background: var(--white);
+}
+
+.nav-section nav a {
+    text-decoration: none;
+    color: var(--heading-ink);
+    font-size: 16px;
+}
+
+.nav-section nav a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: var(--hover-color);
+    margin: auto;
+}
+
+.nav-section nav a:hover {
+    color: var(--hover-color);
+    transform: scale(1.05);
+    transition: transform 0.4s ease, color 0.4s ease;
+}
+
+.nav-section nav a:hover::after {
+    width: 100%;
+    transition: width 0.4s ease;
+}
+
+.nav-section nav button {
+    background: none;
+    padding: 0;
+    border: none;
+    padding: 7px 8px 6px 8px;
+}
+
+.nav-section nav button:hover {
+    background: var(--hover-background);
+    padding: 7px 8px 6px 8px;
+    border-radius: 50%;
+    transition: background 0.4s ease;
+}
+
+.nav-section div {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-section div a {
+    text-decoration: none;
+    color: var(--heading-ink);
+    font-size: 16px;
+}
+
+.nav-section div a:first-child:hover {
+    color: var(--hover-color);
+    transform: scale(1.05);
+    transition: transform 0.4s ease, color 0.4s ease;
+}
+
+.nav-section div a:last-child {
+    padding: 20.5px 35px; 
+    border: 1px solid var(--cards-gray);
+    border-radius: 40px;
+}
+
+.nav-section div a:last-child:hover {
+    background: var(--hover-background);
+    color: var(--white);
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* --- hero section --- */
+
+.hero-section {
+    background: url(Assets/Rectangle\ 14.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-section div:first-child {
+    padding: 91px 0 0 46px;
+    width: 525px;
+}
+
+.hero-section div:first-child p:first-child {
+    margin: 0 0 15px 0;
+    font-size: 16px;
+}
+
+.hero-section div:first-child h2 {
+    font-size: 67px;
+    font-weight: var(--font-weight-semibold);
+}
+
+.hero-section div:first-child h1 {
+    margin: 0 0 24px 0;
+    font-size: 67px;
+    font-weight: var(--font-weight-semibold);
+}
+
+.hero-section div:first-child h1 span {
+    animation: wordfade 0.7s ease;
+    display: inline-block;
+}
+
+.hero-section div:first-child h1 span:nth-child(1) {
+    animation-delay: 0s;
+}
+.hero-section div:first-child h1 span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.hero-section div:first-child h1 span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+.hero-section div:first-child h1 span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+.hero-section div:first-child h1 span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+.hero-section div:first-child h1 span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+.hero-section div:first-child h1 span:nth-child(7) {
+    animation-delay: 0.6s;
+}
+.hero-section div:first-child h1 span:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+
+@keyframes wordfade {
+    from {
+        opacity: 0;
+        transform: translate(-75px, 150px);
+        color: red;
+    }
+    to {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+.hero-section div:first-child p {
+    margin: 0 0 24px 0;
+    font-size: 16px;
+}
+
+.hero-section div div {
+    position: relative;
+    width: 438px;
+}
+
+.hero-section div div input {
+    width: 438px;
+    padding: 18px 200px 18px 25px;
+    background: var(--white);
+    border-radius: 40px;
+    border: none;
+    font-size: 16px;
+}
+
+.hero-section div div button {
+    padding: 18px 25px;
+    background: var(--heading-ink);
+    color: var(--white);
+    border: none;
+    border-radius: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 16px;
+}
+
+.hero-section div div button:hover {
+    background: var(--hover-background);
+    transition: background 0.4s ease;
+}
+
+.hero-section div:last-child {
+    animation: blackhouse 1.5s cubic-bezier(.28,.84,.42,1);
+}
+
+@keyframes blackhouse {
+    0% {
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    35% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/* --- three-steps --- */
+
+.three-steps {
+    margin: 58px 66px 0 66px;
+}
+
+.three-steps>p {
+    text-align: center;
+    margin: 0 0 16px 0;
+    font-size: 16px;
+}
+
+.three-steps>h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: var(--font-weight-semibold);
+}
+
+.three-steps .steps {
+    margin: 45px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.steps div {
+    width: 320px;
+    padding: 9px;
+}
+
+.steps div:hover {
+    box-shadow: 0 0 5px var(--hover-background);
+    border-radius: 10px;
+    transition: box-shadow 0.4s ease;
+}
+
+.steps div h2 {
+    margin: 22px 0;
+    font-weight: var(--font-weight-semibold);
+    font-size: 28px;
+}
+
+.steps div p {
+    font-size: 16px;
+}
+
+/* === main === */
+
+/* --- section a --- */
+
+.section-a {
+    margin: 132px 0 0 0;
+}
+
+.section-a>p {
+    margin: 0 0 16px 32px;
+    font-size: 16px;
+}
+
+.section-a .a-middle {
+    margin: 0 32px 45px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-a .a-middle h1 {
+    font-size: 50px;
+    font-weight: var(--font-weight-semibold);
+}
+
+.a-middle div button:first-child{
+    background: var(--white);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+}
+
+.a-middle div button:last-child{
+    background: var(--heading-ink);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+}
+
+.a-middle div button:hover {
+    background: var(--hover-background);
+    transition: background 0.4s ease;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-container>div {
+    width: 447px;
+    position: relative;
+}
+
+.card-container>div:hover {
+    box-shadow: 0 0 5px var(--hover-background);
+    border-radius: 15px;
+    transition: box-shadow 0.4s ease;
+}
+
+.card-container div .first-img {
+    width: 447px;
+    height: 263px;
+    border-radius: 14px;
+}
+
+.card-container div .second-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 447px;
+    height: 263px;
+}
+
+.card-container div h1 {
+    font-size: 21px;
+    font-weight: var(--font-weight-semibold);
+    margin: 24px 24px 0 24px;
+}
+
+.card-container div p {
+    font-size: 16px;
+    margin: 17px 24px 17px 24px;
+}
+
+.card-container div .stars {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 15px;
+    margin: 0 24px 26.2px 24px;
+}
+
+.card-container div .stars p {
+    margin: 0;
+}
+
+/* --- section b --- */
+
+.section-b {
+    margin: 112px 0 0 0;
+}
+
+.section-b>h1 {
+    text-align: center;
+    margin: 0 auto 45px auto;
+    font-weight: var(--font-weight-semibold);
+    font-size: 50px;
+}
+
+.b-sides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 175px;
+}
+
+.b-left h1 {
+    font-weight: var(--font-weight-semibold);
+    font-size: 38px;
+    margin: 0 0 24px 0;
+}
+
+.b-left>p {
+    font-size: 16px;
+    margin: 0 0 45px 0;
+    width: 474px;
+}
+
+.b-left .b-links {
+    display: flex;
+    gap: 24px;
+}
+
+.b-left .b-links a {
+    border: none;
+    padding: 20.5px 35px;
+    border-radius: 40px;
+    font-size: 16px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.b-left .b-links a:first-child {
+    background: var(--heading-ink);
+    color: var(--white);
+}
+
+.b-left .b-links a:last-child {
+    background: var(--white);
+    color: var(--heading-ink);
+    border: 1px solid var(--cards-gray);
+}
+
+.b-left .b-links a:hover {
+    background: var(--hover-background);
+    transition: background 0.4s ease;
+}
+
+.b-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 95px;
+    margin: 80px 0 0 0;
+}
+
+.b-stats div h1 {
+    font-size: 67px;
+    font-weight: var(--font-weight-semibold);
+    margin: 0;
+}
+
+.b-stats div p {
+    font-size: 16px;
+}
+
+/* === footer area === */
+
+footer {
+    margin: 83px 30px 66px 30px;
+    background: url(Assets/Rectangle\ 17.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.newsletter {
+    margin: 0 0 0 43px;
+}
+
+.newsletter h2 {
+    font-weight: var(--font-weight-semibold);
+    font-size: 50px;
+}
+
+.newsletter p {
+    margin: 18px 0 45px 0;
+    font-size: 16px;
+}
+
+.newsletter form input {
+    padding: 18px 272px 18px 24px;
+    border-radius: 40px;
+    background: var(--white);
+    font-size: 16px;
+    border: none;
+}
+
+.newsletter form button {
+    margin: 0 0 0 -140px;
+    padding: 18px 25px;
+    border-radius: 40px;
+    font-size: 16px;
+    color: var(--white);
+    background: var(--heading-ink);
+    border: none;
+}
+
+.newsletter form button:hover {
+    background: var(--hover-background);
+    transition: background 0.4s ease;
+}
