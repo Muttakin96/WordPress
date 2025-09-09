@@ -1,0 +1,368 @@
+@media screen and (max-width: 1440px) {
+    /* --- hero section --- */
+
+    .hero-section {
+        background: var(--white-color);
+        border-radius: 55px;
+        gap: 50px;
+        padding: 46px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+    }
+
+    .hero-left h2 {
+        width: 100%;
+    }
+    
+    .hero-left p {
+        margin: 0 0 100px 0;
+        width: 100%;
+    }
+
+    .hero-right h6 {
+        font-size: 100px;
+        width: 100%;
+    }    
+
+    .hero-right img {
+        width: 100%;
+    }
+
+    /* === Main Area === */
+
+    /* --- a section --- */
+
+    .a-left img {
+        width: 200px;
+        border-radius: 75px;
+        height: 950px;
+    }
+
+    .a-right {
+        padding: 50px 90px 120px 110px;
+    }
+
+    /* --- c-section --- */
+
+    .c-cards {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .c-cards>div {
+        width: 530px;
+    }
+
+    /* === footer Styles === */
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        margin: 0 0 60px 0;
+    }
+}
+
+/* ============================================================= */
+/* === 425px === */
+
+@media screen and (max-width: 425px) {
+    /* === header styles === */
+
+    /* --- head area --- */
+
+    .head {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: flex-start;
+        padding: 5%;
+        margin: 5%;
+        border-radius: 30px;
+        position: relative;
+    }
+
+    .head nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .head p {
+        display: none;
+    }
+
+    .head .contact-button {
+        position: absolute;
+        right: 5.5%;
+        top: 7%;
+        transform: translateY(0);
+        padding: 15px 20px;
+        border-radius: 30px;
+    }
+
+    /* --- hero section --- */
+
+    .hero-section {
+        background: var(--white-color);
+        height: auto;
+        margin: 0 5%;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 25px;
+        padding: 10% 3%;
+    }
+
+    .hero-left {
+        width: 100%;
+    }
+
+    .hero-left p {
+        width: 100%;
+        margin: 0 0 35px 0;
+    }
+
+    .hero-left h2 {
+        width: 100%;
+    }
+
+    .hero-right h6 {
+        width: 100%;
+        font-size: 50px;
+    }
+
+    .hero-right img {
+        width: 100%;
+    }
+
+    /* === Main Area === */
+
+    /* --- a section --- */
+
+    .a-section {
+        display: flex;
+        flex-direction: column;
+        margin: 5%;
+        gap: 15px;
+    }
+
+    .a-left img {
+        height: 500px;
+        width: 100%;
+    }
+
+    .a-right {
+        padding: 10% 3%;
+        border-radius: 30px;
+    }
+
+    .a-right-top {
+        margin: 0 0 20px 155px;
+
+    }
+
+    /* --- b section --- */
+
+    .b-section {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        margin: 0 5%;
+        border-radius: 30px;
+        gap: 20px;
+        padding: 10% 3%;
+    }
+
+    .b-section div:nth-child(1) {
+        grid-column: 1/span 1;
+        padding: 0 3%;
+    }
+
+    .b-section div:nth-child(1) h1 {
+        font-size: 70px;
+        width: 100%;
+    }
+
+    .b-section>div {
+        padding: 5%;
+    }
+
+    /* --- c-section --- */
+
+
+    .c-section {
+        padding: 10% 5%;
+        margin: 5%;
+        border-radius: 30px;
+    }
+
+    .c-section h1 {
+        margin: 0 0 80px 0;
+        font-size: 70px;
+    }
+
+    .c-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .c-cards>div {
+        padding: 5%;
+        height: auto;
+        width: 100%;
+    }
+
+    .c-cards div h2 {
+        font-size: 50px;
+        margin: 40px 0 40px 0;
+    }
+
+    /* === footer Styles === */
+
+    footer {
+        margin: 0 5% 75px 5%;
+        padding: 3%;
+        border-radius: 30px;
+    }
+
+    .top {
+        display: flex;
+        margin: 0 0 75px 0;
+    }
+
+    .top h1 {
+        font-size: 75px;
+        line-height: 120px;
+        width: 100%;
+        margin: 0 0 75px 0;
+    }
+
+    .top p {
+        width: 100%;
+    }
+
+    .top a {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 47px 3%;
+        border-radius: 30px;
+    }
+
+    .bottom nav {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* ============================================================= */
+/* === 375px === */
+
+@media screen and (max-width: 375px) {
+    /* --- hero section --- */
+
+    .hero-right h6 {
+        width: 100%;
+        font-size: 40px;
+    }
+
+    /* === Main Area === */
+
+    /* --- a section --- */
+
+    .a-right-bottom h1 {
+        width: 100%;
+        font-size: 60px;
+    }
+
+    /* --- b section --- */
+
+    .b-section div:nth-child(1) h1 {
+        font-size: 60px;
+        width: 100%;
+    }
+
+    /* --- c-section --- */
+
+
+    .c-section {
+        padding: 10% 5%;
+        margin: 5%;
+        border-radius: 30px;
+    }
+
+    .c-section h1 {
+        margin: 0 0 80px 0;
+        font-size: 70px;
+    }
+
+    .c-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .c-cards>div {
+        padding: 5%;
+        height: auto;
+        width: 100%;
+    }
+
+    .c-cards div h2 {
+        font-size: 50px;
+        margin: 40px 0 40px 0;
+    }
+
+    /* === footer Styles === */
+
+    footer {
+        margin: 0 5% 75px 5%;
+        padding: 3%;
+        border-radius: 30px;
+    }
+
+    .top {
+        display: flex;
+        margin: 0 0 75px 0;
+    }
+
+    .top h1 {
+        font-size: 75px;
+        line-height: 120px;
+        width: 100%;
+        margin: 0 0 75px 0;
+    }
+
+    .top p {
+        width: 100%;
+    }
+
+    .top a {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 47px 3%;
+        border-radius: 30px;
+    }
+
+    .bottom nav {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
